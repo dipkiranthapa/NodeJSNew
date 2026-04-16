@@ -51,13 +51,23 @@
 - NodeJS
 - CommonJS/ES Modules
 - File System
-- HTTP
+- HTTP - (Http is to create server )
+- Nodemon - (Server Restart for the changes)
 - Event
 - Path
 - URL
+
+---
+
+- HTTP Methods, HTTP Status Codes (API)
 - Promises, Callbacks, Async/ Await
-- Semantics
 - Express
+- REST API
+- Architecture
+- Middleware
+- Validation
+- Postman
+- Semantics
 
 ## Import and Export Module
 
