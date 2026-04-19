@@ -1,20 +1,26 @@
 {
-  "name": "nod1",
+  "name": "techno-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "dev": "nodemon modules/http.js",
-    "filesystem": "node modules/filesystem.js"
+    "dev": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dipkiranthapa/NodeJSNew.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "module",
+  "bugs": {
+    "url": "https://github.com/dipkiranthapa/NodeJSNew/issues"
+  },
+  "homepage": "https://github.com/dipkiranthapa/NodeJSNew#readme",
   "dependencies": {
-    "date-fns": "^4.1.0"
+    "express": "^5.2.1"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"

@@ -7,7 +7,7 @@
 // // Step 3 - After installation of nodemon you can inside packages.json file devDependencies Nodemon Version.
 // // Step 4 - Go insde the packages.json file and at the Script section add "dev": "nodemon modules/http.js"
 // // Step 5 - To Run server - npm run dev
-import http from "http";
+// import http from "http";
 // // Create Server in Http
 // const server = http.createServer((request, responce) => {
 //   responce.writeHead(200, { "content-text": "text/html" });
@@ -31,26 +31,26 @@ import http from "http";
 
 // Create API as well as call a API Routes
 // Request Responce   Client used to send the request for the data
-const server = http.createServer((request, responce) => {
-  switch (request.method) {
-    case "GET":
-      switch (request.url) {
-        case "/about":
-          return responce.end("About-Page");
+// const server = http.createServer((request, responce) => {
+//   switch (request.method) {
+//     case "GET":
+//       switch (request.url) {
+//         case "/about":
+//           return responce.end("About-Page");
 
-        case "/services":
-          return responce.end("Services-page");
+//         case "/services":
+//           return responce.end("Services-page");
 
-        case "/contract":
-          return responce.end("Contract-us");
+//         case "/contract":
+//           return responce.end("Contract-us");
 
-        default:
-          responce.statusCode = 404;
-          return responce.end("Page Not Found");
-      }
-  }
-});
+//         default:
+//           responce.statusCode = 404;
+//           return responce.end("Page Not Found");
+//       }
+//   }
+// });
 
-server.listen(5000, () => {
-  console.log("Server is Running At 5000 Port");
-});
+// server.listen(5000, () => {
+//   console.log("Server is Running At 5000 Port");
+// });

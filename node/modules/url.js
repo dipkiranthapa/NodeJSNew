@@ -6,3 +6,4 @@ console.log(urlObject);
 console.log(urlObject.host);
 console.log(urlObject.search);
 console.log(urlObject.searchParams);
+
