@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    button { margin: 5px; }
+    .user { margin: 5px 0; }
+  </style>
+</head>
+<body>
+
+
+  <h2 id="damo"></h2>
+
+  <button onclick="showUsers()">Show All Users</button>
+  <button onclick="showActiveUsers()">Show Active Users</button>
+  <button onclick="showUserNames()">Show User Names</button>
+
+  <br><br>
+
+  <input type="text" id="searchName" placeholder="Enter username">
+  <button onclick="findUser()">Find User</button>
+
+  <h3>Result:</h3>
+  <div id="output"></div>
+
+  <script src="test.js"></script>
+</body>
+</html>

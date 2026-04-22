@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dynamic Form with Show & Duplicate</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        input, textarea { padding: 6px; margin: 5px 0; width: 300px; }
+        button { padding: 6px 10px; margin: 5px; }
+        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+        th, td { border: 1px solid #ccc; padding: 8px; text-align: left; }
+    </style>
+</head>
+<body>
+
+<h2>Person Form</h2>
+
+<form id="personForm">
+    <input type="text" id="name" placeholder="Name" required><br>
+    <input type="text" id="apartment" placeholder="Apartment" required><br>
+    <textarea id="details" placeholder="Details" required></textarea><br>
+    <button type="submit">Add / Save</button>
+</form>
+
+<hr>
+
+<button onclick="showAll()">Show All Data</button>
+
+<h3>All Entries</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Apartment</th>
+            <th>Details</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="dataTable">
+        <tr><td colspan="4">No data</td></tr>
+    </tbody>
+</table>
+
+<script src="dublicat.js"></script>
+
+
+
+</body>
+</html>

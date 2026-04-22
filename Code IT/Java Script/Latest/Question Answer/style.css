@@ -1,0 +1,36 @@
+body{
+font-family: Arial;
+text-align:center;
+}
+
+#quizBox{
+width:400px;
+margin:auto;
+padding:20px;
+border:1px solid gray;
+border-radius:10px;
+}
+
+.btn{
+display:block;
+width:100%;
+margin:10px 0;
+padding:10px;
+cursor:pointer;
+}
+
+.correct{
+background:green;
+color:white;
+}
+
+.wrong{
+background:red;
+color:white;
+}
+
+#nextBtn,#restartBtn{
+padding:10px 20px;
+margin-top:10px;
+cursor:pointer;
+}

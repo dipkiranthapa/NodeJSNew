@@ -1,0 +1,36 @@
+body{
+font-family: Arial;
+}
+
+button{
+margin:5px;
+padding:5px 10px;
+}
+
+table{
+border-collapse: collapse;
+width: 50%;
+margin-top:20px;
+}
+
+td,th{
+border:1px solid black;
+padding:8px;
+text-align:center;
+}
+
+img{
+  width: 230px;
+  height: 150px;
+}
+
+#first{
+  width: 350px;
+  border: 1px solid red;
+  margin: 10px 0 0 0;
+}
+
+#main{
+  display: flex;
+  gap: 1rem;
+}

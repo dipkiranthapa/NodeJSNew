@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <div class="main">
+    <div class="container">
+      <input type="text" id="text" placeholder="Text Here">
+      <input type="date" id="date">
+
+      <select id="priority">
+        <option id="low">Low</option>
+        <option id="Medium">Medium</option>
+        <option id="High">High</option>
+      </select>
+
+      <button id="btn">Add Task</button>
+      <br><br>
+      <input type="search" id="search" placeholder="Search">
+    
+    <table>
+      <thead>
+        <tr>
+          <th>S.No</th>
+          <th>Task</th>
+          <th>Date</th>
+          <th>Priority</th>
+          <th id="status">Status</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="taskList"></tbody>
+    </table>
+    </div>
+
+    <!--Second Container-->
+    <div class="container">
+      <h2>Completed Task</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>S.No</th>
+            <th>Task</th>
+            <th>Date</th>
+            <th>Priority</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="completed"></tbody>
+    </table>
+    </div>
+  </div>
+  
+
+  <button id="btn5">Click Me</button>
+  <ul id="list"></ul>
+
+     
+
+ 
+
+
+  <!-- <h2>Task Manager with Sort Arrows</h2>
+
+<input id="text" placeholder="Task">
+<input type="date" id="date">
+<select id="priority">
+  <option value="Low">Low</option>
+  <option value="Medium">Medium</option>
+  <option value="High">High</option>
+</select>
+<button id="btn">Add Task</button>
+
+<input id="search" placeholder="Search Task">
+
+<h3>Pending Tasks</h3>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th id="sortDate">Date <span class="arrow">▲▼</span></th>
+<th id="sortPriority">Priority <span class="arrow">▲▼</span></th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="taskList"></tbody>
+</table>
+
+<h3>Completed Tasks</h3>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Date</th>
+<th>Priority</th>
+</tr>
+</thead>
+<tbody id="completed"></tbody>
+</table> -->
+  <script src="./app.js"></script>
+</body>
+</html>

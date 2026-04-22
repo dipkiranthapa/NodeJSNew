@@ -1,0 +1,53 @@
+body{
+font-family: Arial;
+background:#f4f4f4;
+}
+
+.main{
+display:flex;
+gap:20px;
+}
+
+.container{
+background:white;
+padding:20px;
+width:50%;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+}
+
+h2{
+text-align:center;
+}
+
+input,select,button{
+padding:8px;
+margin:5px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+}
+
+th,td{
+border:1px solid gray;
+padding:8px;
+text-align:center;
+cursor:pointer;
+}
+
+/* Priority Colors */
+
+.low{
+background:lightgreen;
+}
+
+.medium{
+background:orange;
+}
+
+.high{
+background:rgb(3, 133, 255);
+color:white;
+}

@@ -1,0 +1,66 @@
+body{
+font-family:Arial;
+background:#b13b3b;
+padding:40px;
+}
+
+/* table */
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+margin-top:20px;
+}
+
+th,td{
+padding:10px;
+border:1px solid #ddd;
+text-align:left;
+}
+
+/* button */
+
+#btn{
+padding:10px 20px;
+cursor:pointer;
+}
+
+/* popup background */
+
+.popup{
+display:none;
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+}
+
+/* popup box */
+
+.popup-content{
+background:white;
+width:300px;
+padding:20px;
+margin:100px auto;
+border-radius:5px;
+}
+
+#close{
+float:right;
+cursor:pointer;
+font-size:20px;
+}
+
+input{
+width:100%;
+padding:8px;
+margin:5px 0;
+}
+
+button{
+padding:8px 15px;
+cursor:pointer;
+}

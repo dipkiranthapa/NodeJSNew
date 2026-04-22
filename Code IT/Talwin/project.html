@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Shopping></title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+ 
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme:{
+        extend:{
+          colors:{
+          primary: "#3b82f6",
+          secondary: "#1e40af",
+          third: "#f5e9d8",
+        },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="light">
+  <div class="w-full text-center py-1 text-white bg-gray-800 dark:bg-red-500">Notice</div>
+  <header class="w-full h-16 bg-white dark:bg-gray-900 dark:text-white sticky top-0 flex shadow">
+    
+      <!-- max-auto   this will be at center-->
+    <div class="container mx-auto py-3">        
+      <div class="flex justify-between px-3 items-center">
+    <!-- Logo -->
+        <h1 class="text-2xl font-semibold font-serif text-primary dark:text-white">
+        <a href="#">Tech Shopping </a></h1>
+    <!-------------------------------------------------------- Nav   ------------------------------------------------------->
+     <div class="flex items-center gap-6">
+     <nav class="hidden sm:block">
+      <ul class="flex gap-5">
+      <li><a href="#" class="text-gray-700 font-medium hover:text-primary dark:text-white dark:hover:text-third">Home</a></li>
+      <li><a href="#" class="text-gray-700 font-medium hover:text-primary dark:text-white dark:hover:text-third">About</a></li>
+      <li><a href="#" class="text-gray-700 font-medium hover:text-primary dark:text-white dark:hover:text-third">Products</a></li>
+      <li><a href="#" class="text-gray-700 font-medium hover:text-primary dark:text-white dark:hover:text-third">Services</a></li>
+      <li><a href="#" class="text-gray-700 font-medium hover:text-primary dark:text-white dark:hover:text-third">Contact</a></li>
+      </ul>
+     </nav>
+  <!------------------------------------------------------------ Icons -------------------------------------------------------->
+  <div class="flex items-center gap-3">
+    <button class="text-gray-500 hover:text-primary dark:text-gray-300"><i class="fas fa-moon"></i></button>
+    <button class="text-gray-500 hover:text-primary dark:text-gray-300"><i class="fas fa-shopping-cart"></i></button>
+    <button class="text-gray-500 hover:text-primary dark:text-gray-300"><i class="fas fa-user"></i></button>
+    <button class="block sm:hidden"><i class="fas fa-bars"></i></button>
+  </div>
+  </div>
+  </div>
+  </div>
+  </header>
+
+  <!--------------------------------------------------------------------Second Section ------------------------------------------------->
+  <main>
+  <section class="bg-gradient-to-r from-blue-50 to-indigo-100 dark:from-gray-800 dark:to-gray-900">
+  <div class="container mx-auto px-4 py-12 h-full">
+    
+    <!-- Hero Section -->
+    <div class="flex flex-col md:flex-row h-full">
+      
+      <!-- TEXT -->
+      <div class="md:w-1/2 mb-8 md:mb-0 flex flex-col justify-center">
+        <h1 class="text-4xl sm:text-5xl font-bold text-gray-800 mb-4 dark:text-white">
+          Innovative <span class="text-red-500">Techno</span> Products
+        </h1>
+
+        <!-- FIXED TYPO -->
+        <p class="text-gray-600 dark:text-gray-300 mb-6 text-justify">
+         The <span class="text-red-500">iPhone 17 Pro Max</span> is Apples flagship smartphone, combining premium design with cutting-edge performance. It features a large 6.9-inch Super Retina XDR OLED display with ProMotion technology for ultra-smooth visuals. Powered by the advanced A19 Pro chip, it delivers exceptional speed, efficiency, and AI capabilities. The device includes a powerful triple-camera system for high-quality photos and videos, along with improved zoom and low-light performance. With long-lasting battery life, durable build, and up to 2TB storage, it is designed for professionals and power users seeking top-tier performance and innovation.
+        </p>
+
+        <div class="flex space-x-4">
+          <button class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-secondary font-medium transition duration-200">
+            Shop Now
+          </button>
+          <button class="border border-primary px-6 py-2 rounded-lg hover:bg-white font-medium dark:hover:text-red transition duration-200 ">
+            Learn More
+          </button>
+        </div>
+      </div>
+      <!-- IMAGE -->
+      <div class="md:w-1/2 flex justify-center items-end">
+        <img src="img/apple1.png"
+        class="w-[500px] sm:w-[400px] md:w-[700px] h-auto md:h-full object-contain rounded-2xl shadow-2xl">
+      </div>
+
+    </div>
+  </div>
+</section>
+<!------------------------------------------------------- Why Choose Us Section ----------------------------------------------------->
+
+  <section class="dark:bg-gray-800 py-12">
+    <div class="container mx-auto px-4">
+      <h2 class="text-center text-3xl font-bold text-gray-800 dark:text-gray-200 mb-2"> Why Shop With Us?</h2>
+      <p class="text-center text-white font-semibold text-xl mb-12">We provide the best shopping experience with our premium quality products.</p>
+  
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <div class="bg-gray-50 p-6 rounded-xl shadow-sm dark:bg-gray-900">
+      <div class="bg-primary/20 rounded-full flex items-center justify-center h-16 w-16 mb-4 mx-auto"><i class="fas fa-credit-card text-2xl text-primary"></i></div>
+      <h3 class="text-xl font-semibold my-3 text-gray-700 dark:text-gray-300 mb-2 text-center"> Secure Payment </h3>
+      <p class="text-sm text-gray-600 dark:text-gray-300 text-center"> Your Payment information is safe with our Encrypted system</p>
+      </div>
+
+       <div class="bg-gray-50 p-6 rounded-xl shadow-sm dark:bg-gray-900 text-center">
+        <div class="bg-primary/10 rounded-full flex items-center justify-center h-16 w-16 mb-4 text-center mx-auto"><i class="fas fa-headset text-2xl text-primary"></i></div>
+        <h3 class="text-xl font-semibold my-3 text-gray-700 dark:text-gray-300 mb-2"> 24/7 Support </h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 text-center"> Our Customer Support team is Available around the clock to help you.</p>
+       </div>
+
+       <div class="bg-gray-50 p-6 rounded-xl shadow-sm dark:bg-gray-900 ">
+        <div class="bg-primary/10 rounded-full flex items-center justify-center h-16 w-16 mb-4 mx-auto"><i class="fas fa-shipping-fast text-2xl text-primary"></i></div>
+        <h3 class="text-xl font-semibold my-3 text-gray-700 dark:text-gray-300 mb-2 text-center"> Free Shipping </h3>
+        <p class="text-sm text-gray-600 dark:text-gray-300 text-center"> Free Shipping for all orders over Rs.500. Fast Delivery Service to your doorstep.</p>
+       </div>
+    </div>
+      </div>
+    </section>
+    <!-------------------------------------------------- Popular Product ----------------------------------------->
+    <!-- py  - Padding top Buttom -->
+    <!-- mx  - margin left-right auto -->
+    <!-- px  - padding left right -->
+    <!-- p-4 - padding 04 corrner -->
+     <!-- bold -->
+    <!-- semibold -->
+  <section class="py-12 bg-gray-50 dark:bg-gray-900">
+  <div class="container mx-auto px-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+  <div class="bg-white rounded-xl shadow-md overflow-hidden transition-all  duration-100 hover:-translate-y-2">
+    <div class="relative">
+      <img src="https://images.unsplash.com/photo-1604387383566-4d14f89bc374?q=80&w=800" class="rounded-xl w-full h-48 object-cover" alt="">
+      <span class="absolute top-2 right-2 bg-red-500 w-20 px-5 text-white rounded-xl ">Sale</span>
+       </div>
+    <div class="p-4 ">
+      <h3 class="font-semibold text-xl">Iphone 17 Pro Max</h3>
+      <div class="flex text-yellow-600">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+      <div class="flex justify-between items-center">
+        <div>
+          <span class="text-lg font-semibold text-gray-800">$999</span>
+        <span class="text-sm text-gray-500 line-through ml-1">$1290</span>
+        </div>
+        <button class="bg-primary text-white hover:bg-secondary w-10 h-10 rounded-full">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+   <div class="bg-white rounded-xl shadow-md overflow-hidden  transition-all  duration-100 hover:-translate-y-2">
+    <div class="relative">
+      <img src="https://images.unsplash.com/photo-1664700651198-42cf8d382dc3?q=80&w=800" class="rounded-xl w-full h-48 object-cover" alt="">
+      <span class="absolute top-2 right-2 bg-green-500 w-20 px-5 text-white rounded-xl">Sale</span>
+       </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-xl">No Thing</h3>
+      <div class="flex text-yellow-600 mt-2">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+       <div class="flex justify-between items-center">
+        <div>
+          <span class="text-lg font-semibold text-gray-800">$999</span>
+        <span class="text-sm text-gray-500 line-through ml-1">$1290</span>
+        </div>
+        <button class="bg-primary text-white hover:bg-secondary w-10 h-10 rounded-full">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+   <div class="bg-white rounded-xl shadow-md overflow-hidden  transition-all  duration-100 hover:-translate-y-2">
+    <div class="relative">
+      <img src="https://images.unsplash.com/photo-1756098520193-c35198d30704?q=80&w=800" class="rounded-xl w-full h-48 object-cover" alt="">
+      <span class="absolute top-2 right-2 bg-red-500 w-20 px-5 text-white rounded-xl ">Sale</span>
+       </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-xl">Vivo</h3>
+      <div class="flex text-yellow-600 mt-2">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+       <div class="flex justify-between items-center">
+        <div>
+          <span class="text-lg font-semibold text-gray-800">$999</span>
+        <span class="text-sm text-gray-500 line-through ml-1">$1290</span>
+        </div>
+        <button class="bg-primary text-white hover:bg-secondary w-10 h-10 rounded-full">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+      </div>
+    
+    </div>
+  </div>
+
+
+   <div class="bg-white rounded-xl shadow-md overflow-hidden  transition-all  duration-100 hover:-translate-y-2">
+    <div class="relative">
+      <img src="https://images.unsplash.com/photo-1637607698829-de4171988e79?q=80&w=800" class="rounded-xl w-full h-48 object-cover" alt="">
+      <span class="absolute top-2 right-2 bg-green-500 w-20 px-5 text-white rounded-xl ">Sale</span>
+       </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-xl">Mac Book Pro M5</h3>
+      <div class="flex text-yellow-600 mt-2">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+      </div>
+       <div class="flex justify-between items-center">
+        <div>
+        <span class="text-lg font-semibold text-gray-800">$999</span>
+        <span class="text-sm text-gray-500 line-through ml-1">$1290</span>
+        </div>
+        <button class="bg-primary text-white hover:bg-secondary w-10 h-10 rounded-full">
+          <i class="fas fa-shopping-cart"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+</div>
+</section>
+
+<!-- Popular Items -->
+
+<section class="py-5 bg-orange-500 dark:bg-gray-800">
+         <div class="container mx-auto px-1">
+          <h2 class="text py-3 font-bold text-xl text-white">Welcome to Amazon! Home of deals !See more</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 m-w-5xl mx-auto gap-3">
+        <div class="bg-white border rounded-2xl overflow-hidden shadow-md transition-all duration-100 hover:-translate-y-2">
+                               
+         <div class="image w-full h-48 object-cover">
+                   <img src="https://images.unsplash.com/photo-1637607698829-de4171988e79?q=80&w=800" class="rounded-xl w-full h-48 object-cover" alt="">
+              </div> 
+            <div class="mx-2 mx-3">
+            <h2 class="text-xl font-bold">New Samsung TV</h2>
+            </div>
+
+           
+            <div class="flex mx-3">
+              <p><span class="bg-red-600 rounded-xl px-3 text-sm py-1 text-white">25% Off</span></p>
+            <p class="text-red-600 mx-2">Limited time Deal</p>
+            </div>
+            <div class="flex mx-3">
+              <p class="font-semibold">AED-199</p>
+              <p class="font-semibold line-through mx-3">AED-300</p>
+            </div>
+          </div>
+
+          <div class="bg-white border rounded-2xl overflow-hidden shadow-md  transition-all duration-100 hover:-translate-y-2">
+          <div class="image w-full h-48 object-cover ">
+          <img src="https://images.unsplash.com/photo-1587372723630-cc6f6f661cdc?q=80&w=800" class="rounded-xl w-full h-48 object-cover" alt="">
+          </div> 
+          <div class="mx-2 mx-3">
+          <h2 class="text-xl font-bold">Microsoft Surface</h2>
+          </div>
+
+          <div class="flex mx-3">
+          <p><span class="bg-red-600 rounded-xl px-3 text-sm py-1 text-white">25% Off</span></p>
+          <p class="text-red-600 mx-2">Limited time Deal</p>
+          </div>
+          <div class="flex mx-3">
+          <p class="font-semibold">AED-2500</p>
+          <p class="font-semibold line-through mx-3">AED-3000</p>
+          </div>
+          </div>
+
+
+
+          <div class="bg-white border rounded-2xl overflow-hidden shadow-md  transition-all duration-100 hover:-translate-y-2">
+          <div class="image w-full h-48 object-cover">
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=800" class="rounded-xl w-full h-48 object-cover" alt="">
+          </div> 
+          <div class="mx-2 mx-3">
+          <h2 class="text-xl font-bold">Samsung Mobile</h2>
+          </div>
+
+          <div class="flex mx-3">
+              <p><span class="bg-red-600 rounded-xl px-3 text-sm py-1 text-white">25% Off</span></p>
+            <p class="text-red-600 mx-2">Limited time Deal</p>
+            </div>
+            <div class="flex mx-3">
+              <p class="font-semibold">AED-950</p>
+              <p class="font-semibold line-through mx-3">AED-1000</p>
+            </div>
+          </div>
+
+
+          <div class="bg-white border rounded-2xl overflow-hidden shadow-md  transition-all duration-100 hover:-translate-y-2">
+          <div class="image w-full h-48 object-cover">
+          <img src="https://images.unsplash.com/photo-1502783167913-8e718e555a06?q=80&w=800" class="rounded-xl w-full h-48 object-cover" alt="">
+          </div> 
+          <div class="mx-2 mx-3">
+          <h2 class="text-xl font-bold">Dell Laptop</h2>
+          </div>
+        
+          <div class="flex mx-3">
+          <p><span class="bg-red-600 rounded-xl px-3 text-sm py-1 text-white">25% Off</span></p>
+          <p class="text-red-600 mx-2">Limited time Deal</p>
+          </div>
+          <div class="flex mx-3">
+          <p class="font-semibold">AED-255</p>
+          <p class="font-semibold line-through mx-3">AED-3000</p>
+          </div>
+          </div>
+          </div>        
+          </div>
+          </div>
+          </div>
+    </section>
+
+    <section class="w-full h-screen"> Recommended for you</section>
+    <section class="w-full h-screen bg-slate-200">Bestsellers for you</section>
+    <section class="w-full h-64 bg-blue-500">Lowest prices on top brands</section>
+    <section class = "w-full h-screen bg-slate-200">Bestsellers in fashion</section>
+  </main>
+
+  <footer class="w-full h-64 bg-blue-700">Footer</footer>
+
+  
+</body>
+</html>

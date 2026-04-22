@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Amazon Style Cart</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<h1>🛍️ Amazon Style Shopping</h1>
+
+<div class="container">
+
+  <!-- Product List -->
+  <div class="products">
+    <h2>Products</h2>
+
+    <div class="product">
+      <span>📱 Phone - $300</span>
+      <button onclick="addToCart('Phone', 300)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <span>💻 Laptop - $800</span>
+      <button onclick="addToCart('Laptop', 800)">Add to Cart</button>
+    </div>
+
+    <div class="product">
+      <span>🎧 Headphones - $100</span>
+      <button onclick="addToCart('Headphones', 100)">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Cart -->
+  <div class="cart">
+    <h2>🛒 Cart</h2>
+    <div id="cartItems"></div>
+
+    <input type="text" id="coupon" placeholder="Coupon (SAVE10)">
+    
+    <select id="taxType">
+      <option value="gst">GST (5%)</option>
+      <option value="vat">VAT (10%)</option>
+    </select>
+
+    <button onclick="calculateTotal()">Checkout</button>
+
+    <div class="summary">
+      <p id="subtotal"></p>
+      <p id="discount"></p>
+      <p id="tax"></p>
+      <p id="shipping"></p>
+      <h3 id="total"></h3>
+    </div>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

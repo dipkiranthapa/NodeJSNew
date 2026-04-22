@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Real World JavaScript Functions</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    section {
+      border: 1px solid #ccc;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    button {
+      margin-top: 10px;
+    }
+    p {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Real-World JavaScript Functions</h1>
+
+<!-- Login -->
+<section>
+  <h3>1️⃣ Login Validation</h3>
+  <input id="username" placeholder="Username"><br><br>
+  <input id="password" type="password" placeholder="Password"><br>
+  <button onclick="login()">Login</button>
+  <p id="loginResult"></p>
+</section>
+
+<!-- Shopping Cart -->
+<section>
+  <h3>2️⃣ Shopping Cart Total</h3>
+  <button onclick="calculateTotal()">Calculate Total</button>
+  <p id="cartResult"></p>
+</section>
+
+<!-- Email Validation -->
+<section>
+  <h3>3️⃣ Email Validation</h3>
+  <input id="email" placeholder="Enter email">
+  <button onclick="checkEmail()">Check</button>
+  <p id="emailResult"></p>
+</section>
+
+<!-- Password Strength -->
+<section>
+  <h3>4️⃣ Password Strength Checker</h3>
+  <input id="pass" type="password" placeholder="Password">
+  <button onclick="checkStrength()">Check Strength</button>
+  <p id="passResult"></p>
+</section>
+
+<!-- Bank Withdrawal -->
+<section>
+  <h3>5️⃣ Bank Withdrawal</h3>
+  <input id="amount" type="number" placeholder="Withdraw Amount">
+  <button onclick="withdrawMoney()">Withdraw</button>
+  <p id="bankResult"></p>
+</section>
+
+<!-- External JavaScript -->
+<script src="function.js"></script>
+</body>
+</html>

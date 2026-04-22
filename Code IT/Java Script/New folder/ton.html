@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Trip & Ton Calculator</title>
+</head>
+<body>
+
+<h1 id="demo"> Delivery Items </h1>
+
+<h3>Select Trip</h3>
+<select id="trip" onchange="calculateTotal()">
+  <option value="">Select Trip</option>
+  <option value="1">1 Trip</option>
+  <option value="2">2 Trip</option>
+  <option value="3">3 Trip</option>
+</select>
+
+<h3>Select Ton</h3>
+<select id="ton" onchange="calculateTotal()">
+  <option value="">Select Ton</option>
+  <option value="10">1 Ton</option>
+  <option value="20">2 Ton</option>
+  <option value="50">3 Ton</option>
+</select>
+
+<h3>Total Price</h3>
+<p id="total">Total: 0 AED</p>
+
+<script src="ton.js"></script>
+</body>
+</html>

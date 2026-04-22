@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="main">
+    <div class="container">
+    <h2>Task Management System</h2>
+    <input type="text" id="addtext" placeholder="Task">
+    <input type="date" id="date">
+    <select id="priority">
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High</option>
+    </select>
+
+    <button id="addbtn">Add</button>
+    <br><br>
+    <input type="search" id="search" placeholder="Search Task">
+    <br><br>
+    
+    <table>
+    <thead>
+    <tr>
+    <th>Task</th>
+    <th>Date</th>
+    <th>Priority</th>
+    <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="tasklist"></tbody>
+    </table>
+    </div>
+<div class="container">
+<h2>Completed Tasks</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Date</th>
+<th>Priority</th>
+</tr>
+</thead>
+<tbody id="completed"></tbody>
+</table>
+</div>
+</div>
+<script src="./app.js"></script>
+  
+</body>
+</html>

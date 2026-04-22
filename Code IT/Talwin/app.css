@@ -1,0 +1,7 @@
+:root {
+  --primary: 59 130 246;
+}
+
+.dark {
+  --primary: 236 72 153; /* pink */
+}

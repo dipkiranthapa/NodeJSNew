@@ -71,6 +71,7 @@ MERN (MongoDB, Express, React, and Node.js)
 - Validation
 - Postman
 - Semantics
+- Enviroment Variables
 
 ## Import and Export Module
 
@@ -200,3 +201,86 @@ node scr/app.js -> Run Server from the Terminal
 - For the get, post , put & delete need postman that so need to login at postman using google id.
 
 ## Route
+
+- Route is also called the end point.
+
+## Fetch Data From data/product.json folders
+
+- For fatch the data you have to import using fs (file system)
+- FileSystem Import Write - import fs from "fs";
+  Code-> app.get("/product", (request, responce)=>{
+  const product = fs.readFile("data/product.json", "utf8");
+  const data = JSON.parse(product);
+  responce.json(data);  
+   })
+
+  ## Json Data Convert
+  - Stringified json -> JavaScript Object : JSON.parse
+  - JavaScript Object => JSON :JSON.stringfy
+
+## From Express Js
+
+- Create Server
+- Create Route
+- Responce Send
+- Status Send
+- Create API
+
+## Enviroment Variables
+
+- Hamro application ko jati pani configuration or secret xa yo sabai hami yo enviorment variables bata control garxam.
+- yo yo feature enable garna yo yo feature disable garna ho vhane enviroment variables bata garna
+- API haru aru lai share garnu hudaina
+- Secrets and config
+
+- If you want create enviroment variables you have to create file in package.json not inside folder
+- Create One file (.env)
+- For .env variables should not be push on git, that so click on .gitignore file and write .env
+
+      -> inside .env variables we can define port, version of app, secret we can share the port, version but do not share variables means port number, secret keys to other.
+
+- To share .env for other create another file .env.example
+- 1. Copy all code of .env
+  2. Paste in .env.example
+  3. Change the port number secret keys
+
+## To use .env variable
+
+- To Install .env file (or to use the .env file need to install dotenv )
+- ## Code-> npm i dotenv (This need to install at package.json file location)
+- -> After installation finished create one folder inside scr folder name (config)
+  -> Inside this config folder all configuration will be here
+  -> After creating Folder Create one file index.js
+  -> Inside this index.js type code
+  -> import dotenv from "dotenv"
+  -> Now you have to call dotenv to call dotenv type this code
+  - 1.  dotenv.config();
+
+  -> Create one
+  -> After typing this code we need conf
+
+  ## Express Layered Architecture
+
+  In Express JS need to create folder as a layered architecture need to create scr folder inside this scr folder
+  need to create controllers Folder / Middlewares Folder / Models Folder / Routes Folder
+
+- 01 Step- At First we have work from routes - to start work create file productRoutes inside the routes folder.
+- To Connect the productRouter.js File need to connect at app.js file
+
+- 02 Step - Work in Controller
+
+## Layered Architecture
+
+1. API Layer
+   a. Routes - Handle the routes/endpoints
+   b. Controllers - Handle Requests and responses
+   c. Middlewares - Logging, Auth
+2. Business Logic Layer
+   a. Services - Client Code
+3. Data Logic Layer
+   a. Models
+4. Database Layer
+
+## Request Object (request params)
+
+- From the Client side data

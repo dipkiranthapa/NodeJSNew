@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Popup Form</title>
+<link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<button id="btn">New Member</button>
+<table>
+<thead>
+<tr>
+<th>SL</th>
+<th>Name</th>
+<th>Age</th>
+</tr>
+</thead>
+<tbody id="tableBody">
+</tbody>
+</table>
+
+<!-- popup -->
+
+<div id="form" class="popup">
+<div class="popup-content">
+<span id="close">&times;</span>
+<h2>Fill the Form</h2>
+<input type="text" id="fname" placeholder="First Name">
+<input type="text" id="lname" placeholder="Last Name">
+<input type="number" id="age" placeholder="Age">
+<button id="submit">Submit</button>
+</div>
+</div>
+<script src="app.js"></script>
+
+</body>
+</html>

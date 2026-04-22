@@ -1,0 +1,36 @@
+.container{
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+   margin-left: 5px;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1px; /* space between Edit and Delete */
+}
+
+button {
+  cursor: pointer;
+}
